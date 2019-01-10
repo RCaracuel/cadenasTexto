@@ -41,5 +41,16 @@ public class ClaseString {
         System.out.println("Nuevo: "+nuevo);
         System.out.println("Nuevo2: "+nuevo2);
         
+        //Devuelve el índice dentro de la cadena de la primera aparición de
+        //la cadena a buscar
+        int indice=nuevo.indexOf("alboran"); //Traducción: dice en qué posición empieza la palabra introducida
+        System.out.println("Índice:"+indice);//dentro del String que se le ha indicado, si la ocurrencia no existe
+                                             //devuelve un negativo
+        indice=nuevo.indexOf("ran", 10);
+        System.out.println("Índice: "+indice);
+        
+        //Métodos equals y equalsIgnoreCase
+        System.out.println("Igualdad Java y java: "+"Java".equals("java"));
+        
     }
 }
